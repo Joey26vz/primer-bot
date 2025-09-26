@@ -1,0 +1,32 @@
+# ----------------------------
+# Configuración de herramientas
+# ----------------------------
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+# Evita que Ruff analice el entorno virtual, caches y Git
+extend-exclude = [
+  ".venv",
+  ".git",
+  ".ruff_cache",
+  ".pytest_cache"
+]
+
+[tool.ruff.lint]
+# Conjunto base de reglas
+select = ["E", "F", "I"]        # E: pycodestyle, F: pyflakes, I: isort
+ignore = ["E501"]               # Longitud de línea la gestiona Black
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-sort-within-sections = true
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-q"

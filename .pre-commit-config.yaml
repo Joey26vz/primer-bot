@@ -1,0 +1,13 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.3.2
+    hooks:
+      - id: ruff
+        args: [--fix]
+        exclude: ^(\.venv|\.git|\.pytest_cache|\.ruff_cache)/
+
+  - repo: https://github.com/psf/black
+    rev: 23.7.0
+    hooks:
+      - id: black
+        exclude: ^(\.venv|\.git|\.pytest_cache|\.ruff_cache)/
