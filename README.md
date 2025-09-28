@@ -13,3 +13,4 @@ Este es mi primer proyecto en Python con entorno configurado en VSCode, pruebas 
 
 ## 📝 Notas
 Este proyecto es parte de mi proceso de aprendizaje para tener un entorno de desarrollo Python moderno y profesional.
+Prueba de rama protegida
